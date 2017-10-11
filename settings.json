@@ -1,0 +1,16 @@
+{
+    "public": {
+        "dateformat": "DD-MMM-YYYY"
+    },
+    "private": {
+        "flightstats": {
+            "host": "https://api.flightstats.com/flex/schedules/rest/v1",
+            "format": {
+                "JSON": "json",
+                "XML": "XML"
+            },
+            "appId": "26900b7d",
+            "appKey": "fe75f6d4c5256582260c3877abeb21ac"
+        }
+    }
+}

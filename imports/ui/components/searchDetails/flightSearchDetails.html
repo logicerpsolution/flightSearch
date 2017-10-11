@@ -1,0 +1,35 @@
+<template name="flightSearchDetails">
+    {{#with this.searchData}}
+<table class="table table-responsive">
+    
+        <tr>
+              <th rowspan="2">Flight No</th>
+              <th colspan="4" >Departure</th>
+              <th colspan="4">Arrival</th>
+        </tr>
+        <tr>
+              <th >Date</th>
+              <th >Airport Code</th>
+              <th >Airport No.</th>
+              <th >Time</th>
+              <th >Date</th>  
+              <th >Airport Code</th>
+              <th >Airport No.</th>
+              <th >Time</th>
+        </tr>
+        {{#each this}}
+            <tr>
+                <td >{{flightNumber}}</td>
+                <td>{{FormatDate departureTime}}</td>
+                <td>{{departureAirportFsCode}}</td>
+               <td>{{departureAirportFsCode}}</td>
+                <td>{{FormatTime departureTime}}</td>
+                <td>{{FormatDate arrivalTime}}</td>
+                <td>{{arrivalAirportFsCode}}</td>
+                <td>{{arrivalAirportFsCode}}</td>
+                <td>{{FormatTime arrivalTime}}</td>
+            </tr>
+        {{/each}}
+        </table>
+        {{/with}}
+</template>
